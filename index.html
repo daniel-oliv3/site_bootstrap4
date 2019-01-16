@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/compiler/style.css">
+    <!--<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/scss/style.css"> -->
+
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <title>Bootstrap 4</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-primary">
+      <div class="container">
+        <a class="navbar-brand h1 mb-0" href="#">Curso</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+          <span class="navbar-toggler-icon"></span>  
+        </button>  
+
+        <div class="collapse navbar-collapse" id="navbarSite">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Depoimentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contatos</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Social</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Facebook</a>
+                <a class="dropdown-item" href="#">Twitter</a>
+                <a class="dropdown-item" href="#">Instagram</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline">
+            <input class="form-control ml-4 mr-2" type="search" placeholder="Buscar...">
+            <button class="btn btn-dark" type="submit"> Ok </button>
+          </form>      
+      </div>
+    </div>
+    </nav>
+    
+    <!-- carousel -->
+    <div id="carouselSite" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselSite" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselSite" data-slide-to="1"></li>
+        <li data-target="#carouselSite" data-slide-to="2"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imgs/img10.jpg" class="img-fluid d-block">
+          <div class="carousel-caption d-none d-md-block text-dark">
+            <h1>O que é o Lorem Ipsum?</h1>
+            <p class="lead">O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="imgs/img4.jpg" class="img-fluid d-block">
+          <div class="carousel-caption d-none d-md-block text-dark">
+            <h1>De onde é que ele vem?</h1>
+            <p class="lead">Ao contrário da crença popular, o Lorem Ipsum não é simplesmente texto aleatório.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="imgs/img8.jpg" class="img-fluid d-block">
+          <div class="carousel-caption d-none d-md-block text-dark">
+            <h1>Porque é que o usamos?</h1>
+            <p class="lead">É um facto estabelecido de que um leitor é distraído pelo conteúdo legível.</p>
+          </div>
+        </div>
+        
+      </div>
+        <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center my-5">
+          <h1 class="display-3"><i class="fa fa-cogs text-primary" aria-hidden="true"></i> Onde posso arranjar algum?</h1>
+          <p>Existem muitas variações das passagens do Lorem Ipsum disponíveis.</p>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-sm-6 col-md-4 mb-3">
+          <nav id="navbarVertical" class="navbar navbar-light bg-light">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#item1">Item 1</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ml-3" href="#item1-1">Item 1-1</a>
+                <a class="nav-link ml-3" href="#item1-2">Item 1-2</a>
+              </nav>
+              <a class="nav-link my-2" href="#item2">Item 2</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ml-3" href="#item2-1">Item 2-1</a>
+                <a class="nav-link ml-3" href="#item2-2">Item 2-2</a>
+              </nav>
+              <a class="nav-link my-2" href="#item3">Item 3</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ml-3" href="#item3-1">Item 3-1</a>
+                <a class="nav-link ml-3" href="#item3-2">Item 3-2</a>
+              </nav>
+            </nav>
+          </nav>
+        </div>
+        <div class="col-sm-6 col-md-8">  <!-- CONTEUDO DE ROLAGEM -->
+          <div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollspySite">
+            <h4 id="item1">O que é o Lorem Ipsum</h4>
+            <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.</p>
+
+            <h5 id="item1-1">De onde é que ele vem</h5>
+            <p>Ao contrário da crença popular, o Lorem Ipsum não é simplesmente texto aleatório. Tem raízes numa peça de literatura clássica em Latim, de 45 AC, tornando-o com mais de 2000 anos. um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.</p>
+
+            <h5 id="item1-2">Porque é que o usamos</h5>
+            <p>É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica. um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.</p>
+
+            <h4 id="item2">O Lorem Ipsum</h4>
+            <p>O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.</p>
+
+            <h5 id="item2-1">Texto aleatório</h5>
+            <p>Ao contrário da crença popular, o Lorem Ipsum não é simplesmente texto aleatório. Tem raízes  um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.numa peça de literatura clássica em Latim, de 45 AC, tornando-o com mais de 2000 anos.</p>
+
+            <h5 id="item2-2">Tipografia electrónica</h5>
+            <p>Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica, mantendo-se  um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. essencialmente inalterada. Foi popularizada nos anos 60 com a disponibilização das folhas de Letraset, que continham passagens com Lorem Ipsum.</p>
+
+
+            <h4 id="item3">Folhas de Letraset</h4>
+            <p>Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica, mantendo-se essencialmente inalterada. Foi popularizada nos anos 60 com a disponibilização das folhas de Letraset, um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. que continham passagens com Lorem Ipsum.</p>
+
+            <h5 id="item3-1">Richard McClintock</h5>
+            <p>um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.</p>
+
+            <h5 id="item3-2">Lorem ipsum dolor</h5>
+            <p>Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. Este um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro.um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica Este livro é um tratado na teoria da ética, muito popular durante a Renascença. A primeira linha de Lorem Ipsum, "Lorem ipsum dolor sit amet..." aparece de uma linha na secção 1.10.32. O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica, mantendo-se essencialmente inalterada. Foi popularizada nos anos 60 com a disponibilização das folhas de Letraset, que continham passagens com Lorem Ipsum.</p>
+          </div>
+        </div>
+      </div>
+       
+      <!-- Cards 06 -->
+      <div class="row justify-content-sm-center">
+        <div class="col-sm-6 col-md-4">
+          <div class="card mb-5">
+            <img class="card-img-top" src="imgs/img4.jpg">
+            <div class="card-body">
+              <h4 class="card-title">Páginas web</h4>
+              <h6 class="card-subtitle mb-2 text-muted">Gerador na Internet</h6>
+              <p class="card-text">Muitas ferramentas de publicação electrónica e editores de páginas web.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Item-1</li>
+              <li class="list-group-item">Item-2</li>
+              <li class="list-group-item">Item-3</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Páginas web</a>
+              <a href="#" class="card-link">Editores de páginas</a>
+            </div>
+            <div class="card-footer text-muted">
+              Lorem Ipsum
+            </div>               
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card mb-5">
+            <img class="card-img-top" src="imgs/img8.jpg">
+            <div class="card-body">
+              <h4 class="card-title">Hospedagem grátes</h4>
+              <h6 class="card-subtitle mb-2 text-muted">Localhost</h6>
+              <p class="card-text">Ao contrário da crença popular, o Lorem Ipsum não é simplesmente texto aleatório.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Item-1</li>
+              <li class="list-group-item">Item-2</li>
+              <li class="list-group-item">Item-3</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Serviços de segurança</a>
+              <a href="#" class="card-link">Aplicações web</a>
+            </div>
+            <div class="card-footer text-muted">
+              Lorem Ipsum
+            </div>              
+          </div>
+        </div>
+       <div class="col-sm-6 col-md-4">
+          <div class="card mb-5">
+            <img class="card-img-top" src="imgs/img10.jpg">
+            <div class="card-body">
+              <h4 class="card-title">Layout responsivo</h4>
+              <h6 class="card-subtitle mb-2 text-muted">Código comentado</h6>
+              <p class="card-text">orem Ipsum usado desde os anos 1500 é reproduzido abaixo para os interessados.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Item-1</li>
+              <li class="list-group-item">Item-2</li>
+              <li class="list-group-item">Item-3</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">Banco de dados</a>
+              <a href="#" class="card-link">Contatos</a>
+            </div>
+            <div class="card-footer text-muted">
+              Lorem Ipsum
+            </div>               
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jumbotron  -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="display-4"><i class="fa fa-video-camera text-primary" aria-hidden="true"></i> Porque é que o usamos</h1>
+            <p class="lead">É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica. Logo, o uso de Lorem Ipsum leva a uma distribuição mais ou menos normal de letras, ao contráro do uso de "Conteúdo aqui, conteúdo aqui"</p><hr>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">
+              <li class="nav-item">
+                  <a class="nav-link active" id="nav-pills-01" data-toggle="pill" href="#nav-item-01">Nav-Item-01</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" id="nav-pills-02" data-toggle="pill" href="#nav-item-02">Nav-Item-02</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" id="nav-pills-03" data-toggle="pill" href="#nav-item-03">Nav-Item-03</a>
+              </li>
+            </ul>
+
+            <!-- EMBED -->
+              <div class="tab-content" id="nav-pills-content">
+                <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A4tx0kElwSk"></iframe>
+                      </div>
+                    </div>
+                      <div class="col-sm-6">
+                        <p>Existem muitas variações das passagens do Lorem Ipsum disponíveis, mas a maior parte sofreu alterações de alguma forma, pela injecção de humor, ou de palavras aleatórias que nem sequer parecem suficientemente credíveis. Se vai usar uma passagem do Lorem Ipsum, deve ter a certeza que não contém nada de embaraçoso escondido no meio do texto.</p>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="nav-item-02" role="tabpanel">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zEi62PpFezU"></iframe>
+                      </div>
+                    </div>
+                      <div class="col-sm-6">
+                        <p>Todos os geradores de Lorem Ipsum na Internet acabam por repetir porções de texto pré-definido, como necessário, fazendo com que este seja o primeiro verdadeiro gerador na Internet. Usa um dicionário de 200 palavras em Latim, combinado com uma dúzia de modelos de frases, para gerar Lorem Ipsum que pareçam razoáveis. Desta forma, o Lorem Ipsum gerado é sempre livre de repetição, ou de injecção humorística, etc.</p>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="nav-item-03" role="tabpanel">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LwpsdY33Dl8"></iframe>
+                      </div>
+                    </div>
+                      <div class="col-sm-6">
+                        <p>Ao contrário da crença popular, o Lorem Ipsum não é simplesmente texto aleatório. Tem raízes numa peça de literatura clássica em Latim, de 45 AC, tornando-o com mais de 2000 anos. Richard McClintock, um professor de Latim no Colégio Hampden-Sydney, na Virgínia, procurou uma das palavras em Latim mais obscuras (consectetur) numa passagem Lorem Ipsum, e atravessando as cidades do mundo na literatura clássica, descobriu a sua origem.</p>
+                      </div>
+                  </div>
+                </div>
+
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Form -->  
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center my-5">
+          <h1 class="display-4"><i class="fa fa-paper-plane text-primary" aria-hidden="true"></i> Formulário responsivo</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-5">
+        <div class="col-sm-12 col-md-10 col-lg-8">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-sm-6">
+                <label for="inputNome">Nome</label>
+                <input type="text" class="form-control" id="inputNome" placeholder="Digite seu nome">
+              </div>
+              <div class="form-group col-sm-6">
+                <label for="inputNome">Sobrenome</label>
+                <input type="text" class="form-control" id="inputNome" placeholder="Digite seu sobrenome">
+              </div>
+             </div>
+
+             <div class="form-row"> 
+              <div class="form-group col-sm-12">
+                <label for="inputEnd">Endereço</label>
+                <input type="text" class="form-control" id="inputEnd" placeholder="Digite seu endereço">
+              </div>
+             </div>
+             
+             <div class="form-row">  
+               <div class="form-group col-sm-6">
+                <label for="inputCidade">Cidade</label>
+                <input type="text" class="form-control" id="inputCidade" placeholder="Digite a sua cidade">
+              </div>
+              <div class="form-group col-sm-4">
+                <label for="inputEst">Estado</label>
+                <select id="inputEst" class="form-control">
+                  <option selected>Escolha...</option>
+                  <option>Acre</option>
+                  <option>Alagoas</option>
+                  <option>Amapá</option>
+                  <option>Amazonas</option>
+                  <option>Bahia</option>
+                  <option>Ceará</option>
+                  <option>Distrito Federal</option>
+                  <option>Espírito Santo</option>
+                  <option>Goiás</option>
+                  <option>Maranhão</option>
+                  <option>Mato Grosso</option>
+                  <option>Mato Grosso do Sul</option>
+                  <option>Minas Gerais</option>
+                  <option>Pará</option>
+                  <option>Paraíba</option>
+                  <option>Paraná</option>
+                  <option>Pernambuco</option>
+                  <option>Piauí</option>
+                  <option>Rio de Janeiro</option>
+                  <option>Rio Grande do Norte</option>
+                  <option>Rio Grande do Sul</option>
+                  <option>Rondônia</option>
+                  <option>Roraima</option>
+                  <option>Santa Catarina</option>
+                  <option>São Paulo</option>
+                  <option>Sergipe</option>
+                  <option>Tocantins</option>
+                </select>
+              </div>
+              <div class="form-group col-sm-2">
+                <label for="inputCEP">CEP</label>
+                <input type="text" class="form-control" id="inputCEP">
+              </div>  
+            </div>
+            
+            <div class="form-row"> 
+              <div class="form-group col-sm-12">
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"> Desejo receber novidades por e-mail
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-sm-12">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                
+                <a tabindex="0" class="btn btn-secondary ml-2" role="button" data-toggle="popover" data-placement="right" data-trigger="focus" title="Lorem Ipsum" data-content="O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500.">Ajuda</a>
+
+              </div>  
+            </div>  
+
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 mb-3"><hr></div>
+        <div class="col-sm-4">
+          <h3>Curso</h3>
+          <p>Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica, mantendo-se essencialmente inalterada. Foi popularizada nos anos 60.</p>
+          <p>Existem muitas variações das passagens do Lorem Ipsum disponíveis, mas a maior parte sofreu alterações de alguma forma, pela injecção de humor.</p>
+        </div>
+
+        <div class="col-sm-4">
+          <h3>Menu</h3>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">Perfil</a>
+            <a href="#" class="list-group-item list-group-item-action">Serviços</a>
+            <a href="#" class="list-group-item list-group-item-action">Depoimentos</a>
+            <a href="#" class="list-group-item list-group-item-action">Contatos</a>
+          </div> 
+          
+        </div>
+
+        <div class="col-sm-4">
+          <h3>Social</h3>
+          <div class="btn-group-vertical btn-block btn-group-lg" role="group">
+            <a href="#" class="btn btn-outline-primary"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
+            <a href="#" class="btn btn-outline-info"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a>
+            <a href="#" class="btn btn-outline-warning"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+          </div>
+        </div>
+
+        <div class="col-12 mt-5">
+          <blockquote class="blockquote text-center">
+            <p class="mb-0">O sucesso não é garantido, mais o fracasso é certo se você não estiver emocionamente envolvido em seu trablho.</p>
+            <footer class="blockquote-footer">Biz Stone<cite title="Titulo"> Fundador do Twitter</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+
+    </div>
+
+    <!--  MODAL -->
+    <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Lorem Ipsum</h5>
+            <button type="button" class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-6">
+                  <h5>O Lorem Ipsum é um texto</h5>
+                  <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica, mantendo-se essencialmente inalterada. Foi popularizada nos anos 60 com a disponibilização das folhas de Letraset, que continham passagens com Lorem Ipsum, e mais recentemente com os programas de publicação como o Aldus PageMaker que incluem versões do Lorem Ipsum </p>
+                </div>
+                <div class="col-6">
+                  <h5>publicação como o Aldus</h5>
+                  <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica, mantendo-se essencialmente inalterada. Foi popularizada nos anos 60 com a disponibilização das folhas de Letraset, que continham passagens com Lorem Ipsum, e mais recentemente com os programas de publicação como o Aldus PageMaker que incluem versões do Lorem Ipsum </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Abrir</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    <script>
+      $(function(){
+        $('[data-toggle="popover"]').popover()
+      })  
+
+    </script>
+
+  </body>
+</html>
